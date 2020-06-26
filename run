@@ -1,0 +1,3 @@
+make
+cp input test000
+mpirun -n 2 ./prog > out

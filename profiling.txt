@@ -1,0 +1,4 @@
+profiling
+mpirun -n 2 /usr/local/cuda-10.2/bin/nvprof -f --export-profile profile.%q{OMPI_COMM_WORLD_RANK}.out ./prog>out&
+
+/usr/local/cuda-10.2/bin/nvprof --import-profile profile.1.out
